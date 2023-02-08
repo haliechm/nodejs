@@ -1,0 +1,18 @@
+Configuration could be categorised into three major categories:
+
+System Configuration
+App Configuration
+App Keys
+Store the configuration variables in .env (dotenv) which are necessary for configuring your application like App Port, Environment (Production, Staging, etc.). .env configuration will be available across your app as they are set globally as ENV variables.
+
+You could then create multiple app-relevant configuration files like:
+
+Database Connection: Database-specific configurations like Host, Port & Name.
+App Configuration: Acceptable Request Payload Size, Blacklisting IPs or Regions, etc.
+Auth Configuration: OAuth Callback URLs, etc.
+And last but not the least, you could create multiple files and store relevant keys, like OAuth Client & Secret Keys, Database Keys, Mailer Keys etc.
+
+Important: Do not commit any of these configuration files to Git. Copy the configuration structure with dummy values and commit to git using sample files under the /sample folder.
+
+
+https://dev.to/mr_ali3n/folder-structure-for-nodejs-expressjs-project-435l
